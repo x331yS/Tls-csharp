@@ -6,7 +6,8 @@ namespace CSharpDiscovery.Quest02
     {
         public static double DifferenceInMinutes(DateTime start, DateTime end)
         {
-            TimeSpan span = end.Subtract ( start );
+            TimeSpan span = end - start;
+            return span.TotalMinutes;
         }
     }
 }
